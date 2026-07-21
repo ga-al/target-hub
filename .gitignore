@@ -1,5 +1,16 @@
-# Client-only files — do not publish in portfolio repo
+# IDE
+.vscode/
+
+# Client-only — keep locally, do not publish
 target-hub.html
 oferta.html
 terms_of_use.html
 privacy_policy.html
+
+# Unused assets (landing / legacy)
+img/avatar.webp
+img/leads-6.jpg
+img/logo.jpeg
+img/pic.png
+img/reports.webp
+img/лого.png

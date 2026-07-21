@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" role="img" aria-label="Target Hub">
+  <rect x="0" y="4" width="32" height="32" rx="6" fill="#568fed"/>
+  <path fill="#fff" d="M6 14h8v12H6zm12 0h8v8h-8z"/>
+  <text x="42" y="27" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Target Hub</text>
+</svg>

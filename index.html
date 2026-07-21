@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автовыгрузка лидов — Target Hub (demo)</title>
+    <meta name="description" content="Portfolio demo: SaaS dashboard UI with sidebar, forms, custom dropdown and responsive tables. Bootstrap 5.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="position-static">
+    <div class="wrapper d-flex">
+        <aside class="sidebar collapse collapse-horizontal show" tabindex="-1" id="offcanvas" aria-label="Навигация">
+            <div class="sidebar-content">
+                <a class="sidebar-brand" href="index.html">
+                    <img src="img/logo.svg" alt="Target Hub"> 
+                </a>
+                <ul class="sidebar-nav mt-5">
+					<li class="sidebar-item pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> 
+                        <a href="index.html" class="sidebar-link active ps-1">
+                            <span class="align-middle text-uppercase">автовыгрузка лидов</span>
+                        </a>
+					</li>
+                    <li class="sidebar-item pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> 
+                        <a href="target.html" class="sidebar-link ps-1">
+                            <span class="align-middle text-uppercase">отчёты по рекламе</span>
+                        </a>
+					</li>
+				</ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand bg-white shadow-sm p-3">
+				<a class="sidebar-toggle ms-1" data-bs-toggle="collapse" href="#offcanvas" role="button" aria-expanded="true" aria-controls="offcanvas" aria-label="Открыть меню">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align ms-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </a>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                                <img src="img/avatar.svg" class="avatar img-fluid rounded-circle me-1" alt=""> <span class="text-dark">Demo User</span>
+                            </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Settings &amp; Privacy</a>
+								<a class="dropdown-item" href="#">Sign out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+            <main class="content">
+                <div class="container-fluid p-0">
+                    <h1 class="text-uppercase fw-medium fs-6 mb-5">автовыгрузка лидов</h1>
+                    <section class="bg-white shadow-sm py-4 px-2">
+                        <h2 class="fs-6 fw-bold text-dark text-uppercase pb-3">Чтобы создать отчёт выберите нужные параметры</h2>
+                        <div class="col-xl-6">
+                            <form class="mb-5">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control input-text" id="write_name" placeholder="Напишите название">
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <div class="dropdown__content">
+                                        <button type="button" class="dropdown__button">Выбрать группы из которых выгрузить лиды</button>
+                                        <ul class="dropdown__list form-select">
+                                            <li class="dropdown__list-item" data-value="travel">Заметки путешественника</li>
+                                            <li class="dropdown__list-item" data-value="lessons">Конспекты по учебе</li>
+                                            <li class="dropdown__list-item" data-value="photo">Фотоальбом</li>
+                                            <li class="dropdown__list-item" data-value="sport">Дневник спортсмена</li>
+                                        </ul>
+                                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                                        <div class="dropdown__search">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                            </svg>
+                                            <input type="text" placeholder="Поиск..." />
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group mb-3" id="">
+                                    <select class="form-select text-wrap">
+                                        <option value="" selected disabled>Выбрать приложение из которого нужно выгружать лиды</option>
+                                        <option value="">приложение1</option>
+                                        <option value="">приложение2</option>
+                                        <option value="">приложение3</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-3" id="">
+                                    <select class="form-select text-wrap form-forms" multiple>
+                                        <option value="" selected disabled class="fw-bold">Выбрать форму(ы)</option>
+                                        <option value="">Форма1</option>
+                                        <option value="">Форма2</option>
+                                        <option value="">Форма3</option>
+                                        <option value="">Форма1</option>
+                                        <option value="">Форма2</option>
+                                        <option value="">Форма3</option>
+                                        <option value="">Форма1</option>
+                                        <option value="">Форма2</option>
+                                        <option value="">Форма3</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Создать отчёт</button>
+                            </form>
+                        </div>
+                        <h2 class="fs-6 fw-bold text-dark text-uppercase pb-3">Ваши выгрузки</h2>
+                        <table class="table table-striped">
+                            <tbody>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="report-2.html" class="table-link active">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link" target="_blank">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Отчёт №1</td>
+                                <td class="text-end text-secondary">2024/01/24</td>
+                                <td class="text-end fw-bold"><a href="#" role="button" class="table-link">ссылка
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary me-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            
+            </main>
+            <footer class="footer mt-auto">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<a class="text-muted" href="index.html">Target Hub</a>
+                            <p class="mb-0">© 2024 · Portfolio demo</p>
+						</div>
+						<div class="col-6 text-end">
+							<p class="mb-0">Dashboard UI case study</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+    </div>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

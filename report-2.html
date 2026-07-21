@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Просмотр отчёта — Target Hub (demo)</title>
+    <meta name="description" content="Portfolio demo: responsive report table with horizontal scroll on mobile. Bootstrap 5.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="position-static">
+    <div class="wrapper d-flex">
+        <div class="main">
+            <nav class="navbar navbar-top navbar-expand px-md-4 p-3">
+				<a class="navbar-brand" href="index.html">
+                    <img src="img/logo.svg" alt="Target Hub"> 
+                </a>
+			</nav>
+            <main class="content px-md-4 py-md-5 py-4 p-3">
+                <div class="container-fluid p-0">
+                    <h1 class="text-uppercase fw-medium fs-6 mb-4">Название отчёта (демо)</h1>
+                    <div class="row flex-column">
+                        <div class="col">
+                            <div class="table-responsive-md table-report">
+                                <table class="table table-bordered border-secondary table-transition mb-2 w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Дата отправки</th>
+                                            <th scope="col">Имя</th>
+                                            <th scope="col">Номер телефона</th>
+                                            <th scope="col">VK профиль</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">1</th>
+                                            <td>2024-01-24 19:29</td>
+                                            <td>Анна</td>
+                                            <td>+7(900)000-00-01</td>
+                                            <td><a href="#" class="active">vk.com/demo_user_01</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">2</th>
+                                            <td>2024-01-24 19:41</td>
+                                            <td>Мария</td>
+                                            <td>+7(900)000-00-02</td>
+                                            <td><a href="#">vk.com/demo_user_02</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">3</th>
+                                            <td>2024-01-24 19:52</td>
+                                            <td>Иван</td>
+                                            <td>+7(900)000-00-03</td>
+                                            <td><a href="#">vk.com/demo_user_03</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">4</th>
+                                            <td>2024-01-24 19:54</td>
+                                            <td>Ольга</td>
+                                            <td>+7(900)000-00-04</td>
+                                            <td><a href="#">vk.com/demo_user_04</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">5</th>
+                                            <td>2024-01-24 21:28</td>
+                                            <td>Елена</td>
+                                            <td>+7(900)000-00-05</td>
+                                            <td><a href="#">vk.com/demo_user_05</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">6</th>
+                                            <td>2024-01-25 12:42</td>
+                                            <td>Виктория</td>
+                                            <td>+7(900)000-00-06</td>
+                                            <td><a href="#">vk.com/demo_user_06</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">7</th>
+                                            <td>2024-01-25 15:13</td>
+                                            <td>Алёна</td>
+                                            <td>+7(900)000-00-07</td>
+                                            <td><a href="#">vk.com/demo_user_07</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">8</th>
+                                            <td>2024-01-30 17:37</td>
+                                            <td>Татьяна</td>
+                                            <td>+7(900)000-00-08</td>
+                                            <td><a href="#">vk.com/demo_user_08</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">9</th>
+                                            <td>2024-01-30 20:14</td>
+                                            <td>Валентина</td>
+                                            <td>+7(900)000-00-09</td>
+                                            <td><a href="#">vk.com/demo_user_09</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">10</th>
+                                            <td>2024-01-31 18:18</td>
+                                            <td>Екатерина</td>
+                                            <td>+7(900)000-00-10</td>
+                                            <td><a href="#">vk.com/demo_user_10</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">11</th>
+                                            <td>2024-01-31 19:21</td>
+                                            <td>Дарья</td>
+                                            <td>+7(900)000-00-11</td>
+                                            <td><a href="#">vk.com/demo_user_11</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center table-primary" scope="row">12</th>
+                                            <td>2024-02-04 18:48</td>
+                                            <td>Светлана</td>
+                                            <td>+7(900)000-00-12</td>
+                                            <td><a href="#">vk.com/demo_user_12</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-12 text-md-start text-center mt-3">
+                            <a href="#" role="button" class="btn btn-primary text-uppercase w-75">скачать</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer mt-auto px-md-4 p-3">
+                <div class="text-start ">
+                    <a class="text-muted" href="index.html">Target Hub</a>
+                    <p class="mb-0">© 2024 · Portfolio demo</p>
+                </div>
+			</footer>
+        </div>
+    </div>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
